@@ -8,34 +8,4 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  def input_to_index(user_input)
-    user_input.to_i - 1
-  end
-
-  def move(board, index, player = "X")
-     board[index] = player
-  end
-  def valid_move?(board, index)
-    def position_taken?(board, index)
-      if board[index] == " " || board[index] == "" || board[index] == nil
-        return false
-      else
-        return true
-      end
-    end
-
-    def on_board?(index)
-      if index.between?(0, 8) == true
-        return true
-      else
-        return false
-      end
-    end
-
-    if (position_taken?(board, index)) == false && (on_board?(index) == true)
-      return true
-    else
-      return false
-    end
-  end
 end
